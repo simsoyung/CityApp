@@ -13,6 +13,12 @@
 		46A7EA762C073C2B00787311 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 46A7EA752C073C2B00787311 /* Base */; };
 		46A7EA782C073C3100787311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46A7EA772C073C3100787311 /* Assets.xcassets */; };
 		46A7EA7B2C073C3100787311 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 46A7EA7A2C073C3100787311 /* Base */; };
+		46A7EA852C073CA500787311 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7EA842C073CA500787311 /* CityViewController.swift */; };
+		46A7EA892C073CCA00787311 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7EA872C073CCA00787311 /* CityTableViewCell.swift */; };
+		46A7EA8A2C073CCA00787311 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46A7EA882C073CCA00787311 /* CityTableViewCell.xib */; };
+		46A7EA8C2C073CDC00787311 /* City.sb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A7EA8B2C073CDC00787311 /* City.sb.storyboard */; };
+		46A7EA922C073D5400787311 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7EA912C073D5400787311 /* extension.swift */; };
+		46A7EA952C073E4A00787311 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 46A7EA942C073E4A00787311 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		46A7EA772C073C3100787311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46A7EA7A2C073C3100787311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46A7EA7C2C073C3100787311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46A7EA842C073CA500787311 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		46A7EA872C073CCA00787311 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		46A7EA882C073CCA00787311 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		46A7EA8B2C073CDC00787311 /* City.sb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = City.sb.storyboard; sourceTree = "<group>"; };
+		46A7EA8F2C073D1E00787311 /* CityInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
+		46A7EA912C073D5400787311 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A7EA952C073E4A00787311 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +69,8 @@
 		46A7EA6D2C073C2B00787311 /* CityApp */ = {
 			isa = PBXGroup;
 			children = (
+				46A7EA8D2C073CF100787311 /* cell */,
+				46A7EA862C073CAB00787311 /* City */,
 				46A7EA6E2C073C2B00787311 /* AppDelegate.swift */,
 				46A7EA702C073C2B00787311 /* SceneDelegate.swift */,
 				46A7EA722C073C2B00787311 /* ViewController.swift */,
@@ -63,8 +78,36 @@
 				46A7EA772C073C3100787311 /* Assets.xcassets */,
 				46A7EA792C073C3100787311 /* LaunchScreen.storyboard */,
 				46A7EA7C2C073C3100787311 /* Info.plist */,
+				46A7EA8E2C073D1800787311 /* Data */,
 			);
 			path = CityApp;
+			sourceTree = "<group>";
+		};
+		46A7EA862C073CAB00787311 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				46A7EA842C073CA500787311 /* CityViewController.swift */,
+				46A7EA8B2C073CDC00787311 /* City.sb.storyboard */,
+			);
+			path = City;
+			sourceTree = "<group>";
+		};
+		46A7EA8D2C073CF100787311 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				46A7EA872C073CCA00787311 /* CityTableViewCell.swift */,
+				46A7EA882C073CCA00787311 /* CityTableViewCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		46A7EA8E2C073D1800787311 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				46A7EA8F2C073D1E00787311 /* CityInfo.swift */,
+				46A7EA912C073D5400787311 /* extension.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +126,9 @@
 			dependencies = (
 			);
 			name = CityApp;
+			packageProductDependencies = (
+				46A7EA942C073E4A00787311 /* Kingfisher */,
+			);
 			productName = CityApp;
 			productReference = 46A7EA6B2C073C2B00787311 /* CityApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 46A7EA622C073C2B00787311;
+			packageReferences = (
+				46A7EA932C073E4A00787311 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 46A7EA6C2C073C2B00787311 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +176,8 @@
 			files = (
 				46A7EA782C073C3100787311 /* Assets.xcassets in Resources */,
 				46A7EA7B2C073C3100787311 /* Base in Resources */,
+				46A7EA8A2C073CCA00787311 /* CityTableViewCell.xib in Resources */,
+				46A7EA8C2C073CDC00787311 /* City.sb.storyboard in Resources */,
 				46A7EA762C073C2B00787311 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A7EA892C073CCA00787311 /* CityTableViewCell.swift in Sources */,
 				46A7EA732C073C2B00787311 /* ViewController.swift in Sources */,
+				46A7EA852C073CA500787311 /* CityViewController.swift in Sources */,
+				46A7EA922C073D5400787311 /* extension.swift in Sources */,
 				46A7EA6F2C073C2B00787311 /* AppDelegate.swift in Sources */,
 				46A7EA712C073C2B00787311 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,8 +351,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +360,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.CityApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +382,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +391,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sesac.CityApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +423,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		46A7EA932C073E4A00787311 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		46A7EA942C073E4A00787311 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 46A7EA932C073E4A00787311 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 46A7EA632C073C2B00787311 /* Project object */;
 }
