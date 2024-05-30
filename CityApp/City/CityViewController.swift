@@ -15,17 +15,16 @@ class CityViewController: UIViewController {
     
     let list = CityInfo.city
     var filtered: [City] = []
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "인기 도시"
         configureTableView()
-        let segment: UISegmentedControl = {
-          let control = UISegmentedControl(items: ["모두", "국내", "해외"])
-          return control
-        }()
+        segment.setTitle("모두", forSegmentAt: 0)
+        segment.setTitle("국내", forSegmentAt: 1)
+        segment.setTitle("해외", forSegmentAt: 2)
         self.segment.addTarget(self, action: #selector(didChangeValue(segment:)), for: .valueChanged)
-        
         self.segment.selectedSegmentIndex = 0
         self.didChangeValue(segment: self.segment)
 
@@ -50,7 +49,7 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let data = list[indexPath.row]
         let cell = cityTableView.dequeueReusableCell(withIdentifier: CityTableViewCell.identifier, for: indexPath) as! CityTableViewCell
-        //세그먼트 누르면 빈배열에 넣어서 분기처리
+        
         
         cell.awakeFromNib()
         cell.setData(data: data)
@@ -59,7 +58,7 @@ extension CityViewController: UITableViewDelegate, UITableViewDataSource {
     
     @objc
     func didChangeValue(segment: UISegmentedControl){
-        
+        print(#function)
     }
     
 }
