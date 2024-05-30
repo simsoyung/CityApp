@@ -19,6 +19,7 @@
 		46A7EA8C2C073CDC00787311 /* City.sb.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46A7EA8B2C073CDC00787311 /* City.sb.storyboard */; };
 		46A7EA922C073D5400787311 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7EA912C073D5400787311 /* extension.swift */; };
 		46A7EA952C073E4A00787311 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 46A7EA942C073E4A00787311 /* Kingfisher */; };
+		46A7EA972C07734100787311 /* CityInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A7EA962C07734100787311 /* CityInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +35,8 @@
 		46A7EA872C073CCA00787311 /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		46A7EA882C073CCA00787311 /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		46A7EA8B2C073CDC00787311 /* City.sb.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = City.sb.storyboard; sourceTree = "<group>"; };
-		46A7EA8F2C073D1E00787311 /* CityInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityInfo.swift; sourceTree = "<group>"; };
 		46A7EA912C073D5400787311 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		46A7EA962C07734100787311 /* CityInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CityInfo.swift; path = ../../../../Asset/CityInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 			children = (
 				46A7EA8D2C073CF100787311 /* cell */,
 				46A7EA862C073CAB00787311 /* City */,
+				46A7EA8E2C073D1800787311 /* Data */,
 				46A7EA6E2C073C2B00787311 /* AppDelegate.swift */,
 				46A7EA702C073C2B00787311 /* SceneDelegate.swift */,
 				46A7EA722C073C2B00787311 /* ViewController.swift */,
@@ -78,7 +80,6 @@
 				46A7EA772C073C3100787311 /* Assets.xcassets */,
 				46A7EA792C073C3100787311 /* LaunchScreen.storyboard */,
 				46A7EA7C2C073C3100787311 /* Info.plist */,
-				46A7EA8E2C073D1800787311 /* Data */,
 			);
 			path = CityApp;
 			sourceTree = "<group>";
@@ -104,7 +105,7 @@
 		46A7EA8E2C073D1800787311 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				46A7EA8F2C073D1E00787311 /* CityInfo.swift */,
+				46A7EA962C07734100787311 /* CityInfo.swift */,
 				46A7EA912C073D5400787311 /* extension.swift */,
 			);
 			path = Data;
@@ -193,6 +194,7 @@
 				46A7EA732C073C2B00787311 /* ViewController.swift in Sources */,
 				46A7EA852C073CA500787311 /* CityViewController.swift in Sources */,
 				46A7EA922C073D5400787311 /* extension.swift in Sources */,
+				46A7EA972C07734100787311 /* CityInfo.swift in Sources */,
 				46A7EA6F2C073C2B00787311 /* AppDelegate.swift in Sources */,
 				46A7EA712C073C2B00787311 /* SceneDelegate.swift in Sources */,
 			);
